@@ -1,0 +1,21 @@
+{
+  "name": "nodej",
+  "description": "Plugins and prompts from NodeJ. Browse them with examples at nodej.ai/foundry.",
+  "owner": {
+    "name": "NodeJ",
+    "email": "julian@nodej.ai",
+    "url": "https://nodej.ai"
+  },
+  "plugins": [
+    {
+      "name": "signal-brief",
+      "displayName": "Signal Brief",
+      "description": "Turn one news signal into a three-page executive brief.",
+      "source": { "source": "github", "repo": "nodej-ai/signal-brief" },
+      "category": "research",
+      "tags": ["research", "executive-briefing", "prompt"],
+      "homepage": "https://nodej.ai/signal-brief",
+      "license": "CC-BY-4.0"
+    }
+  ]
+}
