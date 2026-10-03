@@ -1,0 +1,13 @@
+{
+  "about": "Site-only fields for nodej.ai/foundry. Claude reads .claude-plugin/marketplace.json. The site reads both files and joins them by name. An item listed here but not in marketplace.json is shown on the site without an install command (for example a paid prompt).",
+  "items": {
+    "signal-brief": {
+      "tier": "free",
+      "kind": "plugin",
+      "page": "/signal-brief",
+      "run": "/signal-brief:brief <your signal>",
+      "promptUrl": "https://github.com/nodej-ai/signal-brief/blob/main/signal-brief-prompt.md",
+      "added": "2026-10-02"
+    }
+  }
+}
