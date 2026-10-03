@@ -4,13 +4,10 @@
     "signal-brief": {
       "tier": "free",
       "kind": "plugin",
-      "label": "Signal Brief",
       "page": "/signal-brief",
       "run": "/signal-brief:brief <your signal>",
       "promptUrl": "https://github.com/nodej-ai/signal-brief/blob/main/signal-brief-prompt.md",
-      "added": "2026-10-02",
-      "updated": "2026-10-03",
-      "description": "Converts raw signals into structured briefs using the Signal Brief protocol."
+      "added": "2026-10-02"
     }
   }
 }
