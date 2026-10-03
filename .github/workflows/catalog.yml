@@ -1,0 +1,32 @@
+name: Catalog check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check catalog
+        run: node scripts/check-catalog.mjs
+
+      - name: Trigger nodej-site redeploy
+        if: >
+          github.event_name == 'push' &&
+          (
+            contains(toJSON(github.event.commits.*.modified), '.claude-plugin/') ||
+            contains(toJSON(github.event.commits.*.added), '.claude-plugin/') ||
+            contains(toJSON(github.event.commits.*.modified), 'foundry.json') ||
+            contains(toJSON(github.event.commits.*.added), 'foundry.json')
+          )
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: curl -fsS -X POST "$VERCEL_DEPLOY_HOOK"
