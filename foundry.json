@@ -5,7 +5,7 @@
       "tier": "free",
       "kind": "plugin",
       "page": "/signal-brief",
-      "run": "/signal-brief:brief <your signal>",
+      "run": "/signal-brief:signal-brief <your signal>",
       "promptUrl": "https://github.com/nodej-ai/signal-brief/blob/main/signal-brief-prompt.md",
       "added": "2026-10-02"
     }

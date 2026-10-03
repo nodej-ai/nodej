@@ -11,6 +11,7 @@
       "name": "signal-brief",
       "displayName": "Signal Brief",
       "description": "Turn one news signal into a three-page executive brief.",
+      "version": "1.2.2",
       "source": { "source": "github", "repo": "nodej-ai/signal-brief" },
       "category": "research",
       "tags": ["research", "executive-briefing", "prompt"],
