@@ -4,6 +4,7 @@
     "signal-brief": {
       "tier": "free",
       "kind": "plugin",
+      "label": "Signal Brief",
       "page": "/signal-brief",
       "run": "/signal-brief:brief <your signal>",
       "promptUrl": "https://github.com/nodej-ai/signal-brief/blob/main/signal-brief-prompt.md",
