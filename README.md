@@ -25,3 +25,7 @@ Then install a plugin:
 Don't use Claude Code? Each plugin's page on [nodej.ai/foundry](https://nodej.ai/foundry) has a copy-and-paste version.
 
 Made by [NodeJ](https://nodej.ai).
+
+## Contributing
+
+Run `git config core.hooksPath .githooks` once after cloning; the commit-msg hook blocks tool-attribution lines.
