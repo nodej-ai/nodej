@@ -7,7 +7,8 @@
       "page": "/signal-brief",
       "run": "/signal-brief:signal-brief <your signal>",
       "promptUrl": "https://github.com/nodej-ai/signal-brief/blob/main/signal-brief-prompt.md",
-      "added": "2026-10-02"
+      "added": "2026-10-02",
+      "worksIn": "Any AI chat \u00b7 Claude plugin"
     }
   }
 }
